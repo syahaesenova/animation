@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  margin-top: 200px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-name: example;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0% {
+    width: 500px;
+    height: 300px;
+  }
+  25% {
+    width: 50px;
+    height: 300px;
+  }
+  30% {
+    width: 50px;
+    height: 300px;
+    transform: scale(1);
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4);
+  }
+  45% {
+    width: 50px;
+    height: 300px;
+    transform: scale(1);
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4);
+  }
+  48% {
+    box-shadow: inset 10px 10px 10px 5px rgb(133, 133, 133);
+  }
+  50% {
+    transform: scale(0.7);
+    width: 50px;
+    height: 50px;
+    box-shadow: inset 10px 10px 10px 5px rgb(133, 133, 133);
+  }
+  100% {
+    width: 30px;
+    height: 30px;
+  }
+}
